@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  min-height: 20%;
+  width: 100%;
+}
+.top-Icon {
+  display: flex;
+  flex-direction: row;
+  align-items:  baseline;
+  background-color: #101d21;
+  min-height: 20%;
+  width: 30%;
+}
+
+.top-buttons {
+  display: flex;
+  flex-direction: row;
+  background-color: #28501a;
+  align-items:  baseline;
+  min-height: 20%;
+  width: 70%;
 }
