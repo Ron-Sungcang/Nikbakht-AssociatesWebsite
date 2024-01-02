@@ -1,0 +1,40 @@
+version: '3'
+services:
+
+
+
+  server:
+    build:
+       context: ./server
+       dockerfile: ./Dockerfile
+    depends_on:
+      - mongodb
+    container_name: coden_associates_ecom
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./server:/app/src"
+
+    command: "npx nodemon src/server.js"
+
+  client:
+    build:
+         context: ./src
+         dockerfile: ./Dockerfile
+    container_name: Client_ecom
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/app"
+      
+    
+
+  mongodb:
+    image: mongo:latest
+    container_name: Db_ecom
+    ports:
+      - "3306:3306"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
