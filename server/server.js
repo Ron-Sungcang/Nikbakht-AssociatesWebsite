@@ -26,10 +26,17 @@ const HOST = '0.0.0.0';
 // Helper
 const panic = (err) => console.error(err)
 
+//Database setup
+const MongoClient = require('mongodb').MongoClient;
+const DB_Url = 'mongodb://admin:admin@mongodb:3306';
+var con;
 
 // Connect to database
-
-
+MongoClient.connect(DB_Url, (err,db) => {
+	if(err) throw err;
+	con = db.db("ecomDB");
+	console.log("MongoDB Connected");
+});
 
 
 
