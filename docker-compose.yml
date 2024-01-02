@@ -1,8 +1,5 @@
 version: '3'
 services:
-
-
-
   server:
     build:
        context: ./server
@@ -16,19 +13,6 @@ services:
       - "./server:/app/src"
 
     command: "npx nodemon src/server.js"
-
-  client:
-    build:
-         context: ./src
-         dockerfile: ./Dockerfile
-    container_name: Client_ecom
-    stdin_open: true
-    ports:
-      - "3000:3000"
-    volumes:
-      - ".:/app"
-      
-    
 
   mongodb:
     image: mongo:latest
