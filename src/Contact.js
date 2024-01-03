@@ -11,7 +11,7 @@ export const Contact = () => {
         <div className='contact-Body'>
             <div className='contact-Container'>
                 <div className='title-Container'>
-                    <h2 className='contact-Title'>Contact Coden</h2>
+                    <h2 className='contact-Title'>Contact Coden Nikbakht</h2>
                 </div>
                 <div className='body-contain'>
                     <div className='contact-Left'>
@@ -40,7 +40,7 @@ export const Contact = () => {
                         </div>
                     </div>
                     <div className='contact-Right'>
-                        <h2 className='form-Contact'> Need Help With A Legal Matter In Saskatchewan? </h2>
+                        <h2 className='form-Contact'> Need Help With A Legal Matter In Saskatchewan? Let's Start Right Way!</h2>
                         <div className='align-Text'>
                             <input className='text-Field'
                                 type='text'
