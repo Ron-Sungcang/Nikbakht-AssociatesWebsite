@@ -30,6 +30,9 @@
     transform: rotate(360deg);
   }
 }
+::-webkit-scrollbar{
+  width: 0.1px;
+}
 .top-bar {
   display: flex;
   flex-direction: row;

@@ -4,6 +4,7 @@ import './App.css';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Landing } from './Landing';
+import { Contact } from './Contact';
 
 function App() {
   return (
@@ -20,12 +21,13 @@ function App() {
           </div>
 
           <div className="top-right">
-            <button className='top-buttons'>Contact</button>
+            <Link to="/contact"><button className='top-buttons'>Contact</button></Link>
           </div>
         </div>
         
         <Routes>
           <Route exact path="/" element={<Landing />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         </Router>
       </div>

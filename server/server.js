@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-//const cors = require('cors');
-//app.use(cors());
+const cors = require('cors');
+app.use(cors());
 
 const PORT = 8080;
 const HOST = '0.0.0.0';
