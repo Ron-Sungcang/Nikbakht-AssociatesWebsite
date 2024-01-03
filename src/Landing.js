@@ -26,15 +26,12 @@ export const Landing = () => {
                 </div>
             </div>
             <div className='social-Body'>
-                <div className='social-Left'>
-                    <h2>Socials:</h2>
-                </div>
                 <div className='social-Main'>
                     <a href='https://www.youtube.com/@trafficticket/featured'>
-                        <button className='social-Button'><img src={YLogo} className='social-Icon'></img></button>
+                        <button className='social-Button'><img src={YLogo} className='social-Icon' alt='YLogo'></img></button>
                     </a>
                     <a href='https://twitter.com/Codennik'>
-                        <button className='social-Button'><img src={XLogo} className='social-Icon'></img></button>
+                        <button className='social-Button'><img src={XLogo} className='social-Icon' alt='XLogo'></img></button>
                     </a>
                 </div>
             </div>
@@ -43,7 +40,7 @@ export const Landing = () => {
                 <div className='fill-Align'>
                     <div className='fill-Left'>
                         <h3 className='font-Left'>Schedule A Consultation, Ask A Question Or Drop A Message.  </h3>
-                        <h3 className='font-Left'>Any Legal Matter You Might Not Be Sure About Is Welcome.</h3>
+                        <h3 className='font-Left'>Any Legal Matter You Are Unsure About Is Welcome.</h3>
                     </div>
                     <div className='fill-Right'>
                         <h3 className='form-Title'> Fill The Form! </h3>

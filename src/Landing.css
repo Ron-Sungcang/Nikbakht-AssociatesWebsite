@@ -146,14 +146,6 @@
     height: 5%;
     width: 100%;
 }
-.social-Left{
-    height: 100%;
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-}
 .social-Main{
     height: 100%;
     width: 10%;
