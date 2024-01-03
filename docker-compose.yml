@@ -1,24 +1,30 @@
 version: '3'
 services:
   server:
+    image: node:latest
     build:
        context: ./server
        dockerfile: ./Dockerfile
     depends_on:
-      - mongodb
-    container_name: coden_associates_ecom
+      - mysql1
+    container_name: coden_associates_sight
     ports:
       - "8000:8000"
     volumes:
       - "./server:/app/src"
-
     command: "npx nodemon src/server.js"
 
-  mongodb:
-    image: mongo:latest
-    container_name: Db_ecom
-    ports:
-      - "3306:3306"
+  mysql1:
+    image: mysql:5.7
+    platform: linux/amd64
+    restart: always
+    container_name: db1
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=test_db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=admin
+      - MYSQL_ROOT_PASSWORD=admin
+    ports:
+      - '3306:3306'
+    stdin_open: true
+    tty: true

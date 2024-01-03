@@ -27,21 +27,25 @@ const HOST = '0.0.0.0';
 const panic = (err) => console.error(err)
 
 //Database setup
-const MongoClient = require('mongodb').MongoClient;
-const DB_Url = 'mongodb://admin:admin@mongodb:3306';
-var con;
+const mysql = require('mysql');
+const util = require("util"); 
+
 
 // Connect to database
-MongoClient.connect(DB_Url, (err,db) => {
-	if(err) throw err;
-	con = db.db("ecomDB");
-	console.log("MongoDB Connected");
+const connection = mysql.createConnection({
+    host: "0.0.0.0",
+    user: "root",
+    password: "admin",
+	database: "test_db"
 });
 
-
-
-
-
+connection.connect((err) => {
+    if (err) {
+        console.log("Error Connecting")
+        throw err;
+    }
+    console.log('Connected to MySQL Server!');
+});
 
 
 
