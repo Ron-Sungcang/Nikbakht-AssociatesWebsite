@@ -29,6 +29,23 @@ function App() {
           <Route exact path="/" element={<Landing />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <div className='bottom-Body'>
+          <div className='bottom-Logo'>
+            <img src={logo} className="App-logo" alt="logo" />
+            </div>
+                <div className='bottom-Align'>
+                    <div className='bottom-Left'>
+
+                    </div>
+                    <div className='bottom-Separator'></div>
+                    <div className='bottom-Middle'>
+                        <h1 className='bottom-Header'> Services   </h1>
+                    </div>
+                    <div className='bottom-Right'>
+                        <h1 className='bottom-Header'>  Company  </h1>
+                    </div>
+                </div>
+            </div>
         </Router>
       </div>
     </div>

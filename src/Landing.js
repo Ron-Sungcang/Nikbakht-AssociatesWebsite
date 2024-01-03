@@ -1,5 +1,6 @@
 import './Landing.css';
-import logo from './logo.svg';
+import XLogo from './logo-white.png';
+import YLogo from './youtubeIcon.png';
 
 export const Landing = () => {
 
@@ -20,7 +21,17 @@ export const Landing = () => {
                 </div>
             </div>
             <div className='social-Body'>
-                <h3>Socials</h3>
+                <div className='social-Left'>
+                    <h2>Socials:</h2>
+                </div>
+                <div className='social-Main'>
+                    <a href='https://www.youtube.com/@trafficticket/featured'>
+                        <button className='social-Button'><img src={YLogo} className='social-Icon'></img></button>
+                    </a>
+                    <a href='https://twitter.com/Codennik'>
+                        <button className='social-Button'><img src={XLogo} className='social-Icon'></img></button>
+                    </a>
+                </div>
             </div>
             <div className='fill-Body'>
                 <h1 className='fill-Title'>Contact Me Today</h1>
@@ -59,23 +70,6 @@ export const Landing = () => {
                             />
                             </div>
                         <button className='fill-Button'>Submit</button>
-                    </div>
-                </div>
-            </div>
-            <div className='bottom-Body'>
-                <div className='bottom-Logo'>
-                    <img src={logo} className="App-logo" alt="logo" />
-                </div>
-                <div className='bottom-Align'>
-                    <div className='bottom-Left'>
-
-                    </div>
-                    <div className='bottom-Separator'></div>
-                    <div className='bottom-Middle'>
-                        <h1 className='bottom-Header'> Services   </h1>
-                    </div>
-                    <div className='bottom-Right'>
-                        <h1 className='bottom-Header'>  Company  </h1>
                     </div>
                 </div>
             </div>
