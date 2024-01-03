@@ -9,10 +9,9 @@ services:
       - mysql1
     container_name: coden_associates_sight
     ports:
-      - "8000:8000"
+      - "8080:8080"
     volumes:
       - "./server:/app/src"
-    command: "npx nodemon src/server.js"
 
   mysql1:
     image: mysql:5.7
@@ -21,7 +20,6 @@ services:
     container_name: db1
     environment:
       - MYSQL_DATABASE=test_db
-      - MYSQL_USER=root
       - MYSQL_PASSWORD=admin
       - MYSQL_ROOT_PASSWORD=admin
     ports:

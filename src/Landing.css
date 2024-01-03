@@ -146,25 +146,56 @@
     height: 100%;
     width: 35%;
 }
+.font-Type {
+    font-size: 2vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.align-Text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 15%;
+}
 .text-Field{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 12px;
     border-radius: 10px;
-    height: 5%;
-    width: 85%;
+    height: 25%;
+    width: 95%;
+    border-color: transparent;
+}
+.text-Field:hover {
+    border-color: black;
+}
+.align-Message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: 90%;
+    height: 35%;
 }
 .message-Box {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 12px;
     border-radius: 10px;
-    height: 20%;
-    width: 85%;
+    height: 10%;
+    width: 95%;
+    resize: none;
+    border-color: transparent;
+}
+.message-Box:hover{
+    border-color: black;
 }
 .fill-Button{
     background-color: white;
     border-color: white;
     
-    width: 25%;
-    height: 10%;
-    font-size: 1em;
+    width: 20%;
+    height: 6%;
+    font-size: 0.65em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     border-radius: 10px;

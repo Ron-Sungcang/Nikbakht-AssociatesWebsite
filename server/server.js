@@ -3,23 +3,16 @@
 // load package
 const express = require('express');
 const app = express();
-const session = require('express-session');
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-
 app.use(bodyParser.json());
 
+//const cors = require('cors');
+//app.use(cors());
 
-
-
-const cors = require('cors');
-app.use(cors());
-
-
-const PORT = 8000;
+const PORT = 8080;
 const HOST = '0.0.0.0';
 
 
@@ -46,10 +39,6 @@ connection.connect((err) => {
     }
     console.log('Connected to MySQL Server!');
 });
-
-
-
- 
 
 
 app.use('/', express.static('pages'));

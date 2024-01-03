@@ -25,26 +25,33 @@ export const Landing = () => {
 
                     </div>
                     <div className='fill-Right'>
-                        <h6>First Name:</h6>
+                        <div className='align-Text'>
+                        <h6 className='font-Type'>First Name:</h6>
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter First Name'
                                 />
-                        <h6>Last Name:</h6>
+                                </div>
+                                <div className='align-Text'>
+                        <h6 className='font-Type'>Last Name: </h6>
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Last Name'
                             />
-                        <h6>Email Address: </h6>
+                            </div>
+                            <div className='align-Text'>
+                        <h6 className='font-Type'>Email Address: </h6>
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Email Address'
                                 />
-                        <h6>Leave Me A Message: </h6>
-                            <input className='message-Box'
-                                type='text'
-                                placeholder='Enter Message'
+                                </div>
+                                <div className='align-Message'>
+                        <h6 className='font-Type'>Leave Me A Message: </h6>
+                            <textarea className='message-Box'
+                            placeholder='Enter Message'
                             />
+                            </div>
                         <button className='fill-Button'>Submit</button>
                     </div>
                 </div>
