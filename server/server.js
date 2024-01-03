@@ -28,8 +28,7 @@ const util = require("util");
 const connection = mysql.createConnection({
     host: "0.0.0.0",
     user: "root",
-    password: "admin",
-	database: "test_db"
+    password: "admin"
 });
 
 connection.connect((err) => {

@@ -2,16 +2,11 @@ version: '3'
 services:
   server:
     image: node:latest
-    build:
-       context: ./server
-       dockerfile: ./Dockerfile
     depends_on:
       - mysql1
     container_name: coden_associates_sight
     ports:
       - "8080:8080"
-    volumes:
-      - "./server:/app/src"
 
   mysql1:
     image: mysql:5.7
