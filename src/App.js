@@ -14,9 +14,11 @@ function App() {
           <div className="top-Icon">
             <Link exact to="/"><button className='home-Icon'><img src={logo} className="App-logo" alt="logo" /></button> </Link>
           </div>
+
           <div className='top-middle'>
-            <h3>Ron Website</h3>
+            <h3 className='top-title'>Ron Website</h3>
           </div>
+
           <div className="top-right">
             <button className='top-buttons'>Contact</button>
           </div>
@@ -26,7 +28,7 @@ function App() {
           <Route exact path="/" element={<Landing />} />
         </Routes>
         </Router>
-        </header>
+      </header>
     </div>
   );
 }

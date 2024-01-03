@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 5vmin;
   pointer-events: none;
 }
 
@@ -15,19 +15,14 @@
 
 .App-header {
   background-color: white;
-  min-height: 100vh;
+  min-height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,49 +34,62 @@
 .top-bar {
   display: flex;
   flex-direction: row;
-  min-height: 20%;
+  position: fixed;
+  min-height: 10%;
   width: 100%;
 }
 .top-Icon {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: end;
   
   padding-left: 2%;
   background-color: #101d21;
-  min-height: 20%;
-  width: 30%;
+  min-height: 15%;
+  width: 20%;
 }
 .home-Icon {
   cursor: pointer;
   background-color: transparent;
-  
   border-color: transparent;
 }
 
 .top-middle {
   display: flex;
   flex-direction: row;
-  background-color: #32add9;
+  background-color: #101d21;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 2.5vh;
-  padding-left: 20%;
-  min-height: 20%;
-  width: 40%;
+
+  min-height: 15%;
+  width: 55%;
+}
+.top-title {
+  font-size: 2.2vh;
 }
 
 .top-right {
   display: flex;
   flex-direction: row;
-  background-color: #28501a;
-  align-items:  baseline;
-  min-height: 20%;
-  width: 30%;
+  background-color: #101d21;
+  align-items:  center;
+  justify-content: center;
+  min-height: 15%;
+  width: 25%;
 }
 .top-buttons {
   cursor: pointer;
-  
   border-color: transparent;
+  background-color: transparent;
+  
+  color: white;
+  font-size: 1.8vh;
+  border-radius: 3.5px;
+  min-height: 75%;
+  text-decoration-line: underline;
+  opacity: 1;
+  transition: 0.3s;
 }
+.top-buttons:hover{opacity: 0.6;}
