@@ -1,6 +1,7 @@
 import './Landing.css';
 import XLogo from './logo-white.png';
 import YLogo from './youtubeIcon.png';
+import {Link} from 'react-router-dom';
 
 export const Landing = () => {
 
@@ -15,8 +16,12 @@ export const Landing = () => {
                         <h3 className='para-Sentence'>you heard here first and foremost my guy</h3>
                     </p>
                     <div className='quick-Buttons'>
-                        <button className='book-Button'>Book Consultation</button>
-                        <button className='upload-Button'>Upload Ticket</button>
+                        <a href='https://ticketgone.cliogrow.com/book/d66b31c6530714be2c4b38e05d15360b' className='book-Ref'>
+                            <button className='book-Button'> Book Consultation </button>
+                        </a>
+                        <a href='https://ticketgone.cliogrow.com/intake/7be6c79b52a8b24779d5d349c4c22318' className='upload-Ref'>
+                            <button className='upload-Button'>Upload Ticket </button>
+                        </a>
                     </div>
                 </div>
             </div>
