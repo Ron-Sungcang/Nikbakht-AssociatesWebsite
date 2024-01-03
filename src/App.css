@@ -15,7 +15,6 @@
 
 .App-header {
   background-color: white;
-  min-height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,10 +43,9 @@
   align-items: center;
   justify-content: end;
   
-  padding-left: 2%;
-  background-color: #101d21;
+  background-color:#152f39;
   min-height: 15%;
-  width: 20%;
+  width: 25%;
 }
 .home-Icon {
   cursor: pointer;
@@ -58,13 +56,13 @@
 .top-middle {
   display: flex;
   flex-direction: row;
-  background-color: #101d21;
+  background-color: #152f39;
   align-items: center;
   justify-content: center;
   text-align: center;
 
   min-height: 15%;
-  width: 55%;
+  width: 50%;
 }
 .top-title {
   font-size: 2.2vh;
@@ -73,7 +71,7 @@
 .top-right {
   display: flex;
   flex-direction: row;
-  background-color: #101d21;
+  background-color: #152f39;
   align-items:  center;
   justify-content: center;
   min-height: 15%;

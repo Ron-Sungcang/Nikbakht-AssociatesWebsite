@@ -8,7 +8,7 @@ import { Landing } from './Landing';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <Router>
         <div className="top-bar">
           <div className="top-Icon">
@@ -16,7 +16,7 @@ function App() {
           </div>
 
           <div className='top-middle'>
-            <h3 className='top-title'>Ron Website</h3>
+            <h3 className='top-title'>Nikbakht Law</h3>
           </div>
 
           <div className="top-right">
@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/" element={<Landing />} />
         </Routes>
         </Router>
-      </header>
+      </div>
     </div>
   );
 }
