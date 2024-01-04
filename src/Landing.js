@@ -2,6 +2,7 @@ import './Landing.css';
 import XLogo from './logo-white.png';
 import YLogo from './youtubeIcon.png';
 import {Link} from 'react-router-dom';
+import {useState} from 'react';
 
 export const Landing = (props) => {
     const [getFirstname, setFirstname] = useState('');
