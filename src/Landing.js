@@ -5,9 +5,9 @@ import {Link} from 'react-router-dom';
 import {useState} from 'react';
 
 export const Landing = (props) => {
-    const [getFirstname, setFirstname] = useState('');
+    const [getName, setName] = useState('');
     const [getPhone, setPhone] = useState('');
-    const [email, setEmail] = useState('');
+    const [getEmail, setEmail] = useState('');
     const [getMessage, setMessage] = useState('');
 
     return (
@@ -54,6 +54,8 @@ export const Landing = (props) => {
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Your Name'
+                                value={getName}
+                                onChange={e => setName(e.target.value)}
                                 />
                                 </div>
                                 <div className='align-Text'>
@@ -61,6 +63,8 @@ export const Landing = (props) => {
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Phone Number'
+                                value={getPhone}
+                                onChange={e => setPhone(e.target.value)}
                             />
                             </div>
                             <div className='align-Text'>
@@ -68,15 +72,26 @@ export const Landing = (props) => {
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Email Address'
+                                value={getEmail}
+                                onChange={e => setEmail(e.target.value)}
                                 />
                                 </div>
                                 <div className='align-Message'>
                         <h3 className='font-Type'>Leave Me A Message: </h3>
                             <textarea className='message-Box'
                             placeholder='Enter Message'
+                            value={getMessage}
+                            onChange={e => setMessage(e.target.value)}
                             />
                             </div>
-                        <button className='fill-Button'>Submit</button>
+                        <button className='fill-Button' onClick = {e => {
+                            fetch('/email', {
+                                method: 'POST',
+                                body:`recipient=${getName}&phoneNo=${getPhone}&email=${getEmail}&message=${getMessage}`,
+                                headers: {'Content-type':'application/x-www-form-urlencoded'}})
+                                .then(response => response.json())
+                                .then(alert(`Email Sent! name= ${getName} phone = ${getPhone} email = ${getEmail} message= ${getMessage}`));
+                        }}>Submit</button>
                     </div>
                 </div>
             </div>

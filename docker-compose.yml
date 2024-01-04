@@ -1,14 +1,28 @@
 version: '3'
 services:
   server:
+    #build:
+      #context: ./server
+      #dockerfile: ./Dockerfile
     image: node:latest
     depends_on:
       - mysql1
     container_name: coden_associates_sight
     ports:
       - "8080:8080"
+    #command: "node start ./server.js"
     stdin_open: true
     tty: true
+
+  #client:
+    #build:
+      #context: ./src
+      #dockerfile: ./Dockerfile
+    #container_name: Client_site
+    #stdin_open: true
+    #ports:
+    #  - "3000:3000"
+
 
   mysql1:
     image: mysql:5.7

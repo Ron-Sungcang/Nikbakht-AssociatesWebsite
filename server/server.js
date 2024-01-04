@@ -58,10 +58,12 @@ function sendEmail(subject_email, text_name, text_phone, text_message){
             from:'notifications.nikhbakht@gmail.com',
             to: 'sungcangjoseph@gmail.com',
             subject: `Email by ${subject_email}`,
-            text: `Sent by ${text_name} \n
-             Phone Number: ${text_phone} \n
+            text: `Sent by ${text_name}\n
+             Phone Number: ${text_phone}\n
+             Email: ${subject_email}\n
              ${text_message}`
         }
+        console.log(`email ${subject_email}`)
         transporter.sendMail(mail_configs, function(error,info){
             if(error){
                 console.log(error)
@@ -73,12 +75,12 @@ function sendEmail(subject_email, text_name, text_phone, text_message){
 }
 
 //app get function that uses the send email function to send emails
-app.get('/email', (req,res) => {
-    let recipient = req.body.firstname;
-    let phone_no = req.body.lastname;
+app.post('/email', (req,res) => {
+    let recipient = req.body.recipient;
+    let phoneNo = req.body.phoneNo;
     let email = req.body.email;
     let message = req.body.message;
-    sendEmail(recipient,phone_no,email,message)
+    sendEmail(email,recipient,phoneNo,message)
     .then(response => res.send(response.message))
     .catch(error => res.status(500).send(error.message))
 });
