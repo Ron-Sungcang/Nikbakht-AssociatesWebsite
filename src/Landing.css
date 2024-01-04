@@ -1,0 +1,433 @@
+.main-Body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    height: 200vh;
+    width: 100%;
+}
+.quick-Body {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    height: 45%;
+    width: 100%;
+}
+.quick-Container {
+    margin-top: 23vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    border-radius: 8px;
+    transition: 0.3s;
+    height: 50vh;
+    width: 90%;
+    background-color: #59849745;
+}
+.quick-Title {
+    width: 70%;
+    min-height: 15%;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 0.5vh;
+
+    transition: 0.3s;
+    font-size: 5vh;
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+}
+.quick-Para {
+    min-height: 40%;
+    width: 70%;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 0.5vh;
+    border-bottom-color: azure;
+    align-items: center;
+    justify-content: space-around;
+}
+.para-Sentence {
+    font-size: 3.4vh;
+    font-family:"Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+    word-wrap: break-word;
+    transition: 0.3s;
+}
+.quick-Container:hover .para-Sentence{
+    font-size: 3.6vh;
+}
+.quick-Buttons {
+    min-height: 20%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.quick-Container:hover {
+    width: 94%;
+    background-color: #598497ad;
+}
+.quick-Container:hover .quick-Title{
+    font-size: 5.8vh;
+}
+.book-Ref {
+    width: 25%;
+    height: 70%;
+}
+.book-Button{
+    background-color: white;
+    border-color: transparent;
+    
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    color: #152f39;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+.book-Button:hover{
+    background-color:#152f39;
+    border-color: #152f39;
+    color:white;
+
+    width: 115%;
+    height: 105%;
+    font-size: 1.2em;
+}
+.quick-Container:hover .book-Button{
+    width: 115%;
+}
+.upload-Ref {
+    width: 25%;
+    height: 70%;
+    
+}
+.upload-Button {
+    background-color: white;
+    border-color: transparent;
+    
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    border-radius: 10px;
+    color: #152f39;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+.upload-Button:hover{
+    background-color:#152f39;
+    border-color: #152f39;
+    color:white;
+    width: 115%;
+    height: 105%;
+    font-size: 1.2em;
+}
+.quick-Container:hover .upload-Button{
+    width: 115%;
+}
+.social-Body {
+    background-color: #152f39;
+    border-color: white;
+    border-style: solid;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+}
+.social-Main{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social-Icon{
+    height: 3vmin;
+    transition: 0.3s;
+}
+
+.social-Button{
+    height: 90%;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+.social-Button:hover .social-Icon{
+    height: 6vmin;
+}
+.fill-Body {
+    background-color:#dae2e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    height: 50%;
+    width: 100%;
+}
+.fill-Title {
+    font-size: 5vh;
+    font-family:'New Century Schoolbook', 'TeX Gyre Schola', 'serif';
+    color: black;
+}
+.fill-Align {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 90%;
+}
+.fill-Left {
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    height: 100%;
+    width: 50%;
+}
+.font-Left {
+    font-size: 2.5vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 0.432);
+    font-weight:100;   
+    text-align:start;
+}
+.font-Left-Smaller{
+    font-size: 2vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 0.432);
+    font-weight:100; 
+    display: list-item; 
+
+}
+.font_Bottom-Smaller{
+    font-size: 1.5vh;
+    font-family:"Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+    color: white;
+}
+.smaller-Container{
+    width: 70%;
+    height: 35%;
+    padding-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.font-Title{
+    font-size: 4vh;
+    font-family:'New Century Schoolbook, TeX Gyre Schola, serif';
+    overflow-wrap: break-word;
+    color: black;
+}
+.fill-Right {
+    background-color:#3a6676;
+    border-color: #385e6e;
+    border-width: 0.5vh;
+    border-radius: 15px;
+    border-style: solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 100%;
+    width: 35%;
+}
+.form-Title {
+    font-size: 4vh;
+    font-family:'New Century Schoolbook, TeX Gyre Schola, serif';
+}
+.font-Type {
+    font-size: 2vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.align-Text{
+    line-height: 0.1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 15%;
+    padding-bottom: 15px;
+}
+.text-Field{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px;
+    border-radius: 10px;
+    height: 15%;
+    width: 95%;
+    border-color: transparent;
+}
+.text-Field:hover {
+    border-color: black;
+}
+.align-Message {
+    line-height: 0.1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding-top: 15px;
+    width: 90%;
+    height: 35%;
+}
+.message-Box {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 12px;
+    border-radius: 10px;
+    height: 40%;
+    width: 95%;
+    resize: none;
+    border-color: transparent;
+}
+.message-Box:hover{
+    border-color: black;
+}
+.fill-Button{
+    background-color: white;
+    border-color: transparent;
+    
+    width: 20%;
+    height: 8%;
+    font-size: 0.65em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    border-radius: 10px;
+    color: #152f39;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+.fill-Button:hover{
+    background-color:#152f39;
+    border-color: #152f39;
+    color:white;
+    font-size: 0.75em;
+    width: 22%;
+}
+.bottom-Body {
+    background-color:#152f39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    width: 100%;
+}
+.bottom-Logo {
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    height: 20%;
+    width: 90%;
+
+}
+.bottom-Top{
+    width: 56.5%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+}
+.bottom-Align {
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 60%;
+    width: 90%;
+
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 0.5vh;
+}
+.bottom-Left{
+    flex-direction: row;
+    background-color:transparent;
+    height: 90%;
+    width: 70%;
+}
+.bottom-Very-Left{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 100%;
+    width: 40%;
+    justify-content: start;
+    text-align:start;
+    
+
+}
+.bottom-Separator {
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left-width: 0.1vh;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    height: 90%;
+    width: 5%;
+}
+.bottom-Middle{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    height: 100%;
+    width: 15%;
+}
+.bottom-Right{
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    height: 100%;
+    width: 10%;
+}
+.bottom-Header {
+    font-size: 1.8vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: honeydew;
+    text-decoration-line: underline;
+}

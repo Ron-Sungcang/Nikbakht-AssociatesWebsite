@@ -1,3 +1,11 @@
+# How to run this website
+Requires docker
+1. Download or clone main
+2. In the directory of the project run docker-compose build
+3. Run docker-compose up
+4. Go to the specified url (localhost:3000 by default)
+5. Website is fully functional
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

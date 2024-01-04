@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
 }
 
@@ -14,25 +14,83 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar{
+  width: 0.1px;
+}
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  min-height: 5%;
+  width: 100%;
+}
+.top-Icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  
+  background-color:#152f39;
+  min-height: 15%;
+  width: 25%;
+}
+.home-Icon {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-middle {
+  display: flex;
+  flex-direction: row;
+  background-color: #152f39;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 15%;
+  width: 50%;
 }
+.top-title {
+  font-size: 2.2vh;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: row;
+  background-color: #152f39;
+  align-items:  baseline;
+  justify-content: center;
+  min-height: 15%;
+  width: 25%;
+}
+.top-buttons {
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+  
+  color: white;
+  font-size: 1.8vh;
+  border-radius: 3.5px;
+  min-height: 75%;
+  text-decoration-line: underline;
+  opacity: 1;
+  transition: 0.3s;
+}
+.bot-Icon{
+  height: 3vmin;
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 25px;
+}
+.top-buttons:hover{opacity: 0.6;}
