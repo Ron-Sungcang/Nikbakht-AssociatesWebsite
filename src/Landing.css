@@ -20,7 +20,7 @@
     margin-top: 23vh;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
     justify-content: baseline;
     border-radius: 8px;
     transition: 0.3s;
@@ -168,7 +168,7 @@
     height: 6vmin;
 }
 .fill-Body {
-    background-color:thistle;
+    background-color:rgb(239, 233, 233);
     display: flex;
     flex-direction: column;
     align-items: center;

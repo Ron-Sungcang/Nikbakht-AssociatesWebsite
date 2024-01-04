@@ -1,4 +1,5 @@
 import './Contact.css';
+import './Landing.css';
 import PLogo from './phone-logo.png';
 import MLogo from './mail-logo.png';
 import XLogo from './logo-white.png';
@@ -54,15 +55,15 @@ export const Contact = () => {
                                 onChange={e => setName(e.target.value)}
                                 />
                                 </div>
-                                <div className='align-Text'>
+                        <div className='align-Text'>
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Phone No.'
                                 value={getPhone}
                                 onChange={e => setName(e.target.value)}
                             />
-                            </div>
-                            <div className='align-Text'>
+                        </div>
+                        <div className='align-Text'>
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Email Address'
@@ -72,9 +73,9 @@ export const Contact = () => {
                                 </div>
                                 <div className='align-Message'>
                             <textarea className='message-Box'
-                            placeholder='Enter Message'
-                            value={getMessage}
-                            onChange={e => setEmail(e.target.value)}
+                                placeholder='Enter Message'
+                                value={getMessage}
+                                onChange={e => setEmail(e.target.value)}
                             />
                             </div>
                         <button className='contact-Button' onClick = {e => {
