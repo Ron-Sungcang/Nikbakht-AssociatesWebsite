@@ -2,6 +2,7 @@ import './Landing.css';
 import XLogo from './logo-white.png';
 import YLogo from './youtubeIcon.png';
 import {Link} from 'react-router-dom';
+import gif from './CodenGif.gif';
 import {useState} from 'react';
 
 export const Landing = (props) => {
@@ -12,7 +13,13 @@ export const Landing = (props) => {
 
     return (
         <>
-        <div className='main-Body'>
+        <div className='main-Body' style={{
+                    backgroundImage: "url("+gif+")",
+                    backgroundSize: "cover",
+                    minHeight:"20%",
+                    minWidth:"50%",
+                    overlay:true,
+                    backgroundPosition: "center center"}}>
             <div className='quick-Body'>
                 <div className='quick-Container'>
                     <h1 className='quick-Title'>Need Help With Legal Matters In Saskatchewan?</h1>
