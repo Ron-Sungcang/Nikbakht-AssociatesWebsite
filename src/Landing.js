@@ -3,7 +3,11 @@ import XLogo from './logo-white.png';
 import YLogo from './youtubeIcon.png';
 import {Link} from 'react-router-dom';
 
-export const Landing = () => {
+export const Landing = (props) => {
+    const [getFirstname, setFirstname] = useState('');
+    const [getPhone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [getMessage, setMessage] = useState('');
 
     return (
         <>
@@ -45,17 +49,17 @@ export const Landing = () => {
                     <div className='fill-Right'>
                         <h3 className='form-Title'> Fill The Form! </h3>
                         <div className='align-Text'>
-                        <h3 className='font-Type'>First Name:</h3>
+                        <h3 className='font-Type'>Name:</h3>
                             <input className='text-Field'
                                 type='text'
-                                placeholder='Enter First Name'
+                                placeholder='Enter Your Name'
                                 />
                                 </div>
                                 <div className='align-Text'>
-                        <h3 className='font-Type'>Last Name: </h3>
+                        <h3 className='font-Type'>Phone Number: </h3>
                             <input className='text-Field'
                                 type='text'
-                                placeholder='Enter Last Name'
+                                placeholder='Enter Phone Number'
                             />
                             </div>
                             <div className='align-Text'>
