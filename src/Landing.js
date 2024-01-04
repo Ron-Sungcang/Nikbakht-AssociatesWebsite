@@ -108,7 +108,7 @@ export const Landing = (props) => {
                             />
                             </div>
                         <button className='fill-Button' onClick = {e => {
-                            fetch('/email', {
+                            fetch('http://localhost:8080/email', {
                                 method: 'POST',
                                 body:`recipient=${getName}&phoneNo=${getPhone}&email=${getEmail}&message=${getMessage}`,
                                 headers: {'Content-type':'application/x-www-form-urlencoded'}})

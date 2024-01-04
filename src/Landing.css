@@ -412,7 +412,7 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: baseline;
-    height: 120%;
+    height: 100%;
     width: 15%;
 }
 .bottom-Right{
@@ -422,7 +422,7 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: baseline;
-    height: 120%;
+    height: 100%;
     width: 10%;
 }
 .bottom-Header {

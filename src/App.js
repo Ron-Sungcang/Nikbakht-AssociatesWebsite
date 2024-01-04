@@ -24,6 +24,9 @@ function App() {
           </div>
 
           <div className="top-right">
+            <button className='top-buttons'>Our Team</button>
+            <button className='top-buttons'>Practice Areas</button>
+            <button className='top-buttons'>Blog/News</button>
             <Link to="/contact"><button className='top-buttons'>Contact Us</button></Link>
           </div>
         </div>
@@ -66,10 +69,10 @@ function App() {
                     </div>
                     <div className='bottom-Right'>
                         <h1 className='bottom-Header'>  Company  </h1>
-                        <h3 className='font_Bottom-Smaller'>About Us</h3>
-                        <h3 className='font_Bottom-Smaller'>Our Services</h3>
-                        <h3 className='font_Bottom-Smaller'>Blog / News</h3>
-                        <h3 className='font_Bottom-Smaller'>Contact Us</h3>
+                        <h1 className='font_Bottom-Smaller'>About Us</h1>
+                        <h1 className='font_Bottom-Smaller'>Our Services</h1>
+                        <h1 className='font_Bottom-Smaller'>Blog / News</h1>
+                        <h1 className='font_Bottom-Smaller'>Contact Us</h1>
                     </div>
                 </div>
             </div>

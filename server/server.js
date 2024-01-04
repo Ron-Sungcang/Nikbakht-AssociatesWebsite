@@ -61,7 +61,7 @@ function sendEmail(subject_email, text_name, text_phone, text_message){
         //actually sending the email
         const mail_configs = {
             from:'notifications.nikhbakht@gmail.com',
-            to: 'sungcangjoseph@gmail.com',
+            to: 'codennik95@gmail.com',
             subject: `Email by ${subject_email}`,
             text: `Sent by ${text_name}\n
              Phone Number: ${text_phone}\n

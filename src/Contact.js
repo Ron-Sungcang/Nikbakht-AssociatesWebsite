@@ -80,9 +80,9 @@ export const Contact = () => {
                             />
                             </div>
                         <button className='contact-Button' onClick = {e => {
-                            fetch('/email',{ 
+                            fetch('http://localhost:8080/email',{ 
                                 method: 'POST',
-                                body:`recepient=${getName}&phoneNo=${getPhone}&email=${getEmail}&message=${getMessage}`,
+                                body:`recipient=${getName}&phoneNo=${getPhone}&email=${getEmail}&message=${getMessage}`,
                                 headers: {'Content-type':'application/x-www-form-urlencoded'}})
                                 .then(response => response.json())
                                 .then(alert(`Email Sent!`));
