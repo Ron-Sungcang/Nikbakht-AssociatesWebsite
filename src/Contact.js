@@ -4,6 +4,7 @@ import PLogo from './phone-logo.png';
 import MLogo from './mail-logo.png';
 import XLogo from './logo-white.png';
 import YLogo from './youtubeIcon.png';
+import pic from './coden_n.webp';
 import {useState} from 'react';
 
 export const Contact = () => {
@@ -42,7 +43,7 @@ export const Contact = () => {
                             </div>
                         </div>
                         <div className='contact-BotL'>
-                            <h1 className='contact-Title'>CODEN PICTURE HERE</h1>
+                            <img src={pic} className='picture' alt='pic'></img>
                         </div>
                     </div>
                     <div className='contact-Right'>
@@ -60,7 +61,7 @@ export const Contact = () => {
                                 type='text'
                                 placeholder='Enter Phone No.'
                                 value={getPhone}
-                                onChange={e => setName(e.target.value)}
+                                onChange={e => setPhone(e.target.value)}
                             />
                         </div>
                         <div className='align-Text'>
@@ -75,7 +76,7 @@ export const Contact = () => {
                             <textarea className='message-Box'
                                 placeholder='Enter Message'
                                 value={getMessage}
-                                onChange={e => setEmail(e.target.value)}
+                                onChange={e => setMessage(e.target.value)}
                             />
                             </div>
                         <button className='contact-Button' onClick = {e => {
