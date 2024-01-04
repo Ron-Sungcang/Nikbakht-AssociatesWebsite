@@ -17,7 +17,7 @@ function App() {
           </div>
 
           <div className='top-middle'>
-            <h3 className='top-title'>Nikbakht Law Inc.</h3>
+          <Link exact to="/"><button className='home-Icon'><h3 className='top-title'>Nikbakht Law Inc.</h3></button> </Link>
           </div>
 
           <div className="top-right">

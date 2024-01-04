@@ -26,7 +26,7 @@
     transition: 0.3s;
     height: 50vh;
     width: 90%;
-    background-color: #baeaff74;
+    background-color: #59849774;
 }
 .quick-Title {
     width: 70%;
@@ -50,19 +50,24 @@
     border-right: 0;
     border-bottom-width: 0.5vh;
     border-bottom-color: azure;
-    align-items: baseline;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 .para-Sentence {
-    font-size: 3vh;
+    font-size: 3.3vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-wrap: break-word;
+    transition: 0.3s;
+}
+.quick-Container:hover .para-Sentence{
+    font-size: 3.5vh;
 }
 .quick-Buttons {
     min-height: 20%;
     width: 70%;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-evenly;
 }
 .quick-Container:hover {

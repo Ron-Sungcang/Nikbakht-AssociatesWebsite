@@ -23,10 +23,11 @@ export const Landing = (props) => {
             <div className='quick-Body'>
                 <div className='quick-Container'>
                     <h1 className='quick-Title'>Need Help With Legal Matters In Saskatchewan?</h1>
-                    <p className='quick-Para'>
-                        <h3 className='para-Sentence'>We are the people AND Wwe is a cool sport, </h3>
-                        <h3 className='para-Sentence'>you heard here first and foremost my guy</h3>
-                    </p>
+                    <div className='quick-Para'>
+                        <h3 className='para-Sentence'>Step confidently onto the road to justice with Nikbakht Law, 
+                        your dedicated ally in navigating the complexities of traffic law.  Known for our unwavering commitment to securing favorable outcomes, 
+                        we are here to safeguard your rights and guide you through every twist and turn on the legal highway.</h3>
+                    </div>
                     <div className='quick-Buttons'>
                         <a href='https://ticketgone.cliogrow.com/book/d66b31c6530714be2c4b38e05d15360b' className='book-Ref'>
                             <button className='book-Button'> Book Consultation </button>
