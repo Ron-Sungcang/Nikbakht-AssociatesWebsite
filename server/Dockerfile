@@ -3,7 +3,7 @@ FROM node:latest
 WORKDIR /app
 COPY package*.json ./
 
-RUN npm install
+#RUN npm install
 RUN npm install react-router-dom
 RUN npm install @mysql/xdevapi --save --save-exact
 RUN npm install i nodemailer
