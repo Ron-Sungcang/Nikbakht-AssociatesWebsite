@@ -26,7 +26,7 @@
     transition: 0.3s;
     height: 50vh;
     width: 90%;
-    background-color: #59849774;
+    background-color: #59849745;
 }
 .quick-Title {
     width: 70%;
@@ -72,6 +72,7 @@
 }
 .quick-Container:hover {
     width: 94%;
+    background-color: #598497ad;
 }
 .quick-Container:hover .quick-Title{
     font-size: 5.8vh;
