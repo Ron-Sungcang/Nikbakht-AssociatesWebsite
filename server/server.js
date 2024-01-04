@@ -27,20 +27,25 @@ const mysql = require('mysql');
 const util = require("util"); 
 
 
-// Connect to database
-const connection = mysql.createConnection({
-    host: "0.0.0.0",
-    user: "root",
-    password: "admin"
-});
+//Database setup
+//const mysql = require('mysql');
+//const util = require("util"); 
 
-connection.connect((err) => {
-    if (err) {
-        console.log("Error Connecting")
-        throw err;
-    }
-    console.log('Connected to MySQL Server!');
-});
+//TODO WILL USE THIS FOR THE BLOG PAGE
+// Connect to database
+//const connection = mysql.createConnection({
+//    host: "0.0.0.0",
+//    user: "root",
+//    password: "admin"
+//});
+//connection.connect((err) => {
+//    if (err) {
+//        console.log("Error Connecting")
+//        throw err;
+//    }
+//    console.log('Connected to MySQL Server!');
+//});
+
 
 //this is for sending email from the homepage
 //uses Notification.Nikhbakht@gmail.com

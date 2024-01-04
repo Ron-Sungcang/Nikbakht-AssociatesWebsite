@@ -87,4 +87,10 @@
   opacity: 1;
   transition: 0.3s;
 }
+.bot-Icon{
+  height: 3vmin;
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 25px;
+}
 .top-buttons:hover{opacity: 0.6;}

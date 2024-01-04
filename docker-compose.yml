@@ -1,39 +1,48 @@
 version: '3'
 services:
   server:
-    #build:
-      #context: ./server
-      #dockerfile: ./Dockerfile
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
     image: node:latest
-    depends_on:
-      - mysql1
     container_name: coden_associates_sight
     ports:
       - "8080:8080"
-    #command: "node start ./server.js"
+    command: "node server.js"
     stdin_open: true
     tty: true
 
-  #client:
-    #build:
-      #context: ./src
-      #dockerfile: ./Dockerfile
-    #container_name: Client_site
-    #stdin_open: true
-    #ports:
-    #  - "3000:3000"
-
-
-  mysql1:
-    image: mysql:5.7
-    platform: linux/amd64
-    restart: always
-    container_name: db1
-    environment:
-      - MYSQL_DATABASE=test_db
-      - MYSQL_PASSWORD=admin
-      - MYSQL_ROOT_PASSWORD=admin
+  client:
+    build:
+      context: ./src
+      dockerfile: ./Dockerfile
+    container_name: Client_site
+    stdin_open: true
     ports:
-      - '3306:3306'
-    stdin_open: true
-    tty: true
+      - "3000:3000"
+    command: npm start
+    volumes:
+      - ".:/app"
+
+
+#Will use this container in the future
+#commented out because not using currently
+ # mysql1:
+ #   image: mysql:5.7
+ #   platform: linux/amd64
+ #   restart: always
+ #   container_name: db1
+ #   environment:
+ #     - MYSQL_DATABASE=test_db
+ #     - MYSQL_PASSWORD=admin
+ #     - MYSQL_ROOT_PASSWORD=admin
+ #   ports:
+ #     - '3306:3306'
+ #   healthcheck:
+ #     test: ["CMD", 'mysqladmin', 'ping']  # Command to check health.
+ #     interval: 10s # Interval between health checks.
+ #     timeout: 10s # Timeout for each health checking.
+ #     retries: 20 # Hou many times retries.
+ #     start_period: 10s # Estimated time to boot.
+ #   stdin_open: true
+ #   tty: true

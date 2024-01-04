@@ -52,11 +52,26 @@ export const Landing = (props) => {
                 <h1 className='fill-Title'>Contact Us Today</h1>
                 <div className='fill-Align'>
                     <div className='fill-Left'>
-                        <h3 className='font-Left'>Schedule A Consultation, Ask A Question Or Drop A Message.  </h3>
-                        <h3 className='font-Left'>Any Legal Matter You Are Unsure About Is Welcome.</h3>
+                        <h3 className='font-Title'>Our Specialty, Traffic Ticket Defense  </h3>
+                        <h3 className='font-Left'>We are experienced in:</h3>
+                        <div className='smaller-Container'>
+                        <h1 className='font-Left-Smaller'>
+                        Cross Examining Crown witnesses, including police officers</h1>
+                        <h1 className='font-Left-Smaller'>
+                        Preparing and presenting your matter at trial</h1>
+                        <h1 className='font-Left-Smaller'>
+                        Saving your driver insurance rating, including points</h1>
+                        <h1 className='font-Left-Smaller'>
+                        Safeguarding your right to drive</h1>
+                        <h1 className='font-Left-Smaller'>
+                        Keeping your doing record as clean as possible (low insurance rates)</h1>
+                        </div>
+                        <h3 className='font-Left'>
+                        We are highly experienced agents in traffic matters in the Province of Saskatchewan.
+                        This includes navigating the legal system, understanding the law, and dealing with the various levels of Justice Saskatchewan in providing advocacy to our clients.</h3>
                     </div>
                     <div className='fill-Right'>
-                        <h3 className='form-Title'> Fill The Form! </h3>
+                        <h3 className='form-Title'> Let's Get Your Case Resolved Together </h3>
                         <div className='align-Text'>
                         <h3 className='font-Type'>Name:</h3>
                             <input className='text-Field'
