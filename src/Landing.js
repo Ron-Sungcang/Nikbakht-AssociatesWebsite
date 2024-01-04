@@ -41,7 +41,7 @@ export const Landing = (props) => {
                 </div>
             </div>
             <div className='fill-Body'>
-                <h1 className='fill-Title'>Contact Me Today</h1>
+                <h1 className='fill-Title'>Contact Us Today</h1>
                 <div className='fill-Align'>
                     <div className='fill-Left'>
                         <h3 className='font-Left'>Schedule A Consultation, Ask A Question Or Drop A Message.  </h3>
@@ -90,7 +90,7 @@ export const Landing = (props) => {
                                 body:`recipient=${getName}&phoneNo=${getPhone}&email=${getEmail}&message=${getMessage}`,
                                 headers: {'Content-type':'application/x-www-form-urlencoded'}})
                                 .then(response => response.json())
-                                .then(alert(`Email Sent! name= ${getName} phone = ${getPhone} email = ${getEmail} message= ${getMessage}`));
+                                .then(alert(`Email Sent!`));
                         }}>Submit</button>
                     </div>
                 </div>

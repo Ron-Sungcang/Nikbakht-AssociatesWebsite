@@ -3,8 +3,13 @@ import PLogo from './phone-logo.png';
 import MLogo from './mail-logo.png';
 import XLogo from './logo-white.png';
 import YLogo from './youtubeIcon.png';
+import {useState} from 'react';
 
 export const Contact = () => {
+    const [getName, setName] = useState('');
+    const [getPhone, setPhone] = useState('');
+    const [getEmail, setEmail] = useState('');
+    const [getMessage, setMessage] = useState('');
 
     return (
         <>
@@ -44,27 +49,42 @@ export const Contact = () => {
                         <div className='align-Text'>
                             <input className='text-Field'
                                 type='text'
-                                placeholder='Enter First Name'
+                                placeholder='Enter Name'
+                                value={getName}
+                                onChange={e => setName(e.target.value)}
                                 />
                                 </div>
                                 <div className='align-Text'>
                             <input className='text-Field'
                                 type='text'
-                                placeholder='Enter Last Name'
+                                placeholder='Enter Phone No.'
+                                value={getPhone}
+                                onChange={e => setName(e.target.value)}
                             />
                             </div>
                             <div className='align-Text'>
                             <input className='text-Field'
                                 type='text'
                                 placeholder='Enter Email Address'
+                                value={getEmail}
+                                onChange={e => setEmail(e.target.value)}
                                 />
                                 </div>
                                 <div className='align-Message'>
                             <textarea className='message-Box'
                             placeholder='Enter Message'
+                            value={getMessage}
+                            onChange={e => setEmail(e.target.value)}
                             />
                             </div>
-                        <button className='contact-Button'>Submit</button>
+                        <button className='contact-Button' onClick = {e => {
+                            fetch('/email',{ 
+                                method: 'POST',
+                                body:`recepient=${getName}&phoneNo=${getPhone}&email=${getEmail}&message=${getMessage}`,
+                                headers: {'Content-type':'application/x-www-form-urlencoded'}})
+                                .then(response => response.json())
+                                .then(alert(`Email Sent!`));
+                        }}>Submit</button>
                     </div>
                 </div>
             </div>

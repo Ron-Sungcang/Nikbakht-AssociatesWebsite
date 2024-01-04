@@ -17,11 +17,11 @@ function App() {
           </div>
 
           <div className='top-middle'>
-            <h3 className='top-title'>Nikbakht Law</h3>
+            <h3 className='top-title'>Nikbakht Law Inc.</h3>
           </div>
 
           <div className="top-right">
-            <Link to="/contact"><button className='top-buttons'>Contact</button></Link>
+            <Link to="/contact"><button className='top-buttons'>Contact Us</button></Link>
           </div>
         </div>
         
